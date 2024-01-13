@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="material_gray">#EEEEEE</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#536DFE</color>
+
+    <color name="secondary_text" tools:keep="@color/secondary_text">#757575</color>
+    <color name="selector_card_color">#ff9800</color>
+    <color name="white">#ffffff</color>
+    <color name="Mygrey">#eaeaea</color>
+    <color name="subtext">#666666</color>
+
+    <color name="titleTextColor">#FFFF</color>
+    <color name="titleTabColor">#FFFF</color>
+    <color name="titleSelectedTabColor">#a4c400</color>
+
+    <color name="material_drawer_primary_icon">#FFFF</color>
+
+
+</resources>

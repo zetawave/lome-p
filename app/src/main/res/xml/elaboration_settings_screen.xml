@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/elaboration_title">
+        <ListPreference
+            android:key="algorithm"
+            android:title="@string/cipher_algorithm_title"
+            android:summary="@string/cipher_algorithm_text"
+            android:entries="@array/cipher_algorithm"
+            android:entryValues="@array/cipher_algorithm"
+            android:defaultValue="AES-256"/>
+
+        <SwitchPreference
+            android:key="remove_file"
+            android:title="@string/delete_file_title"
+            android:summary="@string/delete_file_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="remove_passes"
+            android:title="@string/remove_passes_title"
+            android:summary="@string/remove_passess_summary"
+            android:defaultValue="0"
+            />
+        <SwitchPreference
+            android:key="vsitr_method"
+            android:title="@string/vsitr_remove_title"
+            android:summary="@string/vsitr_remove_summary"
+            android:defaultValue="false" />
+        <!--
+        <SwitchPreference
+            android:key="attempt_limit"
+            android:title="Limite Tentativi"
+            android:summary="Elimina i/il file dopo un tentativo fallito di decifratura. (Usare con cautela)"
+            android:defaultValue="false"
+            ></SwitchPreference>
+            !-->
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Azioni">
+        <SwitchPreference
+            android:key="log_error"
+            android:title="@string/enable_log_title"
+            android:summary="@string/enable_log_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="mirror"
+            android:title="@string/recursive_acquire_title"
+            android:summary="@string/recursive_acquire_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="move_imvid"
+            android:title="@string/move_image_or_video_title"
+            android:summary="@string/move_image_or_video_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

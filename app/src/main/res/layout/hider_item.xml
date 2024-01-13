@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1">
+<LinearLayout
+    android:layout_width="70sp"
+    android:layout_height="70sp"
+    android:background="@drawable/filehideitem"
+    android:id="@+id/thumbnail">
+        <ImageView
+            android:layout_height="20sp"
+            android:layout_width="20sp"
+            android:layout_gravity="start|top"
+            android:background="@drawable/ic_play_circle_outline_white_24dp"
+            android:id="@+id/expand"
+            android:contentDescription="TODO" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0sp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/filename"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:padding="5sp"
+                android:textColor="#3b3b3b"
+                android:textStyle="italic"
+                android:layout_width="0dp"
+                android:layout_gravity="top"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:text="@string/proof"
+                />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:background="@drawable/gradient_8"
+    android:outlineProvider="bounds"
+    android:elevation="10sp"
+
+    >
+            <Button
+                android:layout_gravity="end|center"
+
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@drawable/ic_settings_backup_restore_black_24dp"
+                android:id="@+id/restore"
+                />
+</LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</android.widget.RelativeLayout>

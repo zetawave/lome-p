@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.KeyMakerActivity"
+
+    >
+<!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/makeKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_check_white_18dp">
+
+    </android.support.design.widget.FloatingActionButton>
+!-->
+
+
+<!--
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_1">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="1"
+            android:columnCount="1">
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:title="@string/make_key"
+                android:titleTextColor="@color/white">
+
+
+                <Button
+                    android:id="@+id/makeKey"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_check_white_24dp"/>
+
+                <Button
+                    android:id="@+id/info"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_info_outline_white_48dp"/>
+            </Toolbar>
+        </GridLayout>
+    </android.support.design.widget.AppBarLayout>
+!-->
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    >
+
+        <GridLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:columnCount="1">
+
+
+<GridLayout
+    android:layout_gravity="end"
+    android:layout_width="match_parent"
+    android:paddingBottom="50dp"
+    android:paddingTop="10dp"
+    android:columnCount="3"
+    android:rowCount="1">
+    <LinearLayout
+        android:layout_gravity="center_vertical|start">
+    <Button
+        android:id="@+id/info"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="10sp"
+        android:background="@drawable/ic_info_outline_orange_24dp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_gravity="center_horizontal">
+    <TextView
+        android:text="Maker"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_gravity="center_vertical">
+    <Button
+        android:id="@+id/makeKey"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginEnd="10sp"
+        android:background="@drawable/ic_check_orange_24dp"/>
+</LinearLayout>
+
+</GridLayout>
+<!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textColor="@color/accent"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/key_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Inserisci il nome"
+            android:maxLength="35"
+            android:backgroundTint="@color/accent"
+            android:inputType="text"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrizione:"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textColor="@color/accent"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/key_description"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Inserisci una descrizione"
+            android:backgroundTint="@color/accent"
+            android:inputType="text"
+            />
+        </LinearLayout>
+        !-->
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lenght"
+            android:layout_margin="10dp"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                    android:id="@+id/toggle_128bit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="128 bit"
+                    android:layout_margin="10dp" />
+
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                    android:id="@+id/toggle_256bit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="256 bit"
+                    android:layout_margin="10dp" />
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+        </LinearLayout>
+!-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hash_algorithm"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                    android:id="@+id/toggle_hashmd5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/md5"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    app:tbgMarkerColor="@color/selector_card_color"/>
+
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                    android:id="@+id/toggle_hashSHA256"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/sha256_title"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    app:tbgMarkerColor="@color/selector_card_color"
+                    />
+
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+        </LinearLayout>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+            android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                    android:id="@+id/toggle_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/file_single"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    app:tbgMarkerColor="@color/selector_card_color"/>
+
+
+                <com.nex3z.togglebuttongroup.button.LabelToggle
+                    android:id="@+id/toggle_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/qrcode"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    app:tbgMarkerColor="@color/selector_card_color"/>
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paspphrase"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <GridLayout
+            android:columnCount="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:rowCount="2"
+            android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:focusableInTouchMode="true"
+            >
+
+                <EditText
+                    android:id="@+id/passphrase"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/Mygrey"
+                    android:hint="@string/insert"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/selector_card_color"
+                    android:inputType="textPassword"
+                    android:textCursorDrawable="@color/selector_card_color"
+                    />
+                <EditText
+                    android:id="@+id/reinsert_passph"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/re_insert"
+                    android:textColor="@color/selector_card_color"
+                    android:backgroundTint="@color/white"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/Mygrey"
+                    android:textCursorDrawable="@color/selector_card_color"
+                    />
+
+            <Button
+                android:id="@+id/randomKey"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_casino_black_24dp"
+                />
+
+        </LinearLayout>
+            <GridLayout
+                android:columnCount="2"
+                android:rowCount="1">
+                <TextView
+                    android:text="@string/save_to_manager"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+            <Switch
+                android:id="@+id/toManager_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:theme="@style/SCBSwitch"
+                />
+            </GridLayout>
+
+
+        </GridLayout>
+
+        </GridLayout>
+</ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

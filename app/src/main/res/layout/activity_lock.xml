@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LockActivity">
+
+    <com.kevalpatel.passcodeview.PinView
+        android:id="@+id/mpin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dividerColor="@color/colorPrimaryDark"
+        app:fingerprintDefaultText="@string/use_fingerprint"
+        app:fingerprintEnable="true"
+        app:fingerprintTextColor="#a4c400"
+        app:fingerprintTextSize="@dimen/finger_print_text_size"
+        app:titleTextColor="@android:color/white"
+        app:pin_titleText="@string/insert_pin"
+        app:pin_titleTextColor="@color/white"
+        app:giveTactileFeedback="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

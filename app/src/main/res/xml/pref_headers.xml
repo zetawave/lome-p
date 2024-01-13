@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="me.lo.lomefree.Fragments.GeneralSettingsFragment"
+        android:icon="@drawable/ic_settings_black1_24dp"
+        android:title="@string/general_title"
+        android:summary="@string/general_settings_header"/>
+
+    <header
+        android:fragment="me.lo.lomefree.Fragments.ElaborationSettingsFragment"
+        android:icon="@drawable/ic_build_black_24dp"
+        android:title="@string/elaboration"
+        android:summary="@string/elaboration_settings_header"/>
+
+    <header
+        android:fragment="me.lo.lomefree.Fragments.AdvancedSettingsFragment"
+        android:icon="@drawable/ic_security_black_24dp"
+        android:title="@string/advanced_title"
+        android:summary="@string/security_option_header"/>
+
+</preference-headers>

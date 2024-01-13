@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/export_key_to_file"
+        android:title="@string/export_to_file"
+        />
+
+    <item
+        android:id="@+id/export_to_qr"
+        android:title="@string/export_to_qrcode"
+        />
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+
+        />
+    <item
+        android:id="@+id/edit"
+        android:title="@string/edit"
+        />
+
+    <item
+        android:id="@+id/delete_key"
+        android:title="@string/delete"
+        />
+</menu>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        >
+        <CheckBox
+            android:layout_gravity="center"
+            android:id="@+id/shredCheckbox"
+            android:onClick="onCheckedChange"
+            >
+        </CheckBox>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/viewShredWarning"
+            android:padding="0dp"
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:textSize="12sp"
+            android:scrollHorizontally="false"
+            android:textColor="@color/md_red_A700">
+
+        </TextView>
+
+    </GridLayout>
+
+</RelativeLayout>

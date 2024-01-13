@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        lomekeyfree {
+            keyAlias 'lomefreekey'
+            keyPassword ''
+            storeFile file('/home/zetawave/Scrivania/Projects/Android_project/Lome/lome/Keystore/lomefreekey.jks')
+            storePassword ''
+        }
+    }
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "me.lo.lomefree"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 30
+        versionName "1.3.7"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+}
+
+configurations {
+    all*.exclude group: 'commons-io'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //implementation files('libs/commons-codec-1.16.0.jar')
+    implementation files('libs/commons-io-2.6.jar')
+    implementation files('libs/passcodeview-2.0.0.aar')
+    implementation files('libs/commons-codec-20041127.091804.jar')
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'net.lingala.zip4j:zip4j:1.3.2'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+    implementation 'com.github.AppIntro:AppIntro:5.1.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation group: 'com.github.medyo', name: 'fancybuttons', version: '1.8.1'
+    implementation 'commons-io:commons-io:2.8.0'
+    implementation "com.mikepenz:materialdrawer:6.1.2"
+    implementation 'com.karumi:dexter:6.0.2'
+    implementation 'com.nex3z:toggle-button-group:1.1.3'
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+    implementation 'com.github.daniel-stoneuk:material-about-library:2.2.4'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'com.erikagtierrez.multiple_media_picker:multiple-media-picker:1.0.1'
+    implementation 'com.google.guava:guava:25.1-android'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.nononsenseapps:filepicker:4.2.1'
+    implementation 'com.cloudrail:cloudrail-si-android:2.21.9'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.3'
+    implementation 'com.github.Angtrim:Android-Five-Stars-Library:v3.1'
+    implementation 'com.google.android.gms:play-services-ads:22.1.0'
+    implementation 'com.anjlab.android.iab.v3:library:2.0.3'
+    implementation 'com.google.firebase:firebase-ads:22.1.0'
+    implementation 'com.github.jakob-grabner:Circle-Progress-View:1.4'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

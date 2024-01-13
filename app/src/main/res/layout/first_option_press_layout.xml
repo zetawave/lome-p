@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:columnCount="1">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:background="@drawable/gradient_7"
+            android:rowCount="1">
+
+        <ImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:background="@drawable/searchkey"
+            android:id="@+id/option_informations_image"
+            android:layout_gravity="center|center_horizontal"
+            android:contentDescription="TODO">
+
+        </ImageView>
+        </GridLayout>
+        <ScrollView
+            android:id="@+id/information_alert_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:fadeScrollbars="false">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/informations"
+            android:padding="10sp"
+            android:id="@+id/option_informations"
+            android:textColor="@color/md_black_1000"
+            android:textSize="16sp"
+            android:ellipsize="none"
+            android:maxLines="6"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            />
+        </ScrollView>
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "674703844534",
+    "firebase_url": "https://lomefree-de478.firebaseio.com",
+    "project_id": "lomefree-de478",
+    "storage_bucket": "lomefree-de478.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674703844534:android:2b86f3433c46e021",
+        "android_client_info": {
+          "package_name": "me.lo.lomefree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674703844534-nsi67s3rnof8m7qhddjo690vmkg6cp2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCHGGxWhH8EWbNLhyV1_H3i2HNk1AqANE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

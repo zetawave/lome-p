@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/general_title">
+        <ListPreference
+            android:key="save_dir"
+            android:title="@string/save_dir_title"
+            android:summary="@string/settings_save_dir_summary_text"
+            android:entries="@array/save_choise"
+            android:entryValues="@array/save_choise"
+            android:defaultValue="Default" />
+
+       <!--
+        <Preference
+            android:key="default_settings"
+            android:title="@string/restore_settings_title"
+            android:summary="@string/restore_text_summary">
+        </Preference>
+!-->
+        <SwitchPreference
+            android:key="notifications"
+            android:title="@string/notifications_title"
+            android:summary="@string/notifications_summary"
+            android:defaultValue="true"
+            />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

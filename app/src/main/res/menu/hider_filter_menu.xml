@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.HiderActivity">
+    <item
+        android:title="@string/filters"
+        android:id="@+id/filters_submenu"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+<group
+    android:checkableBehavior="single"
+    android:enabled="true"
+    android:visible="true"
+    >
+    <item
+        android:id="@+id/filter_for_image"
+        android:title="@string/images"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/filter_for_video"
+        android:title="@string/videos"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/filter_for_files"
+        android:title="@string/files_"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/filter_for_all"
+        android:title="@string/all"
+        android:checkable="true"
+        />
+
+
+</group>
+
+    </menu>
+    </item>
+
+    <item
+        android:id="@+id/restore_all"
+        android:title="@string/restore_all"
+        />
+    <item
+        android:id="@+id/info"
+        android:title="@string/info"
+        />
+
+</menu>
+

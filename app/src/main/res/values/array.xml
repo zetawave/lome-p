@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="save_choise">
+        <item>Default</item>
+        <item>@string/custom</item>
+    </string-array>
+
+
+
+    <string-array name="cipher_algorithm">
+        <item>AES-128</item>
+        <item>AES-256</item>
+        <item>Blowfish/MD5</item>
+        <item>Blowfish/SHA-256</item>
+    </string-array>
+
+    <array name="my_custom_theme">
+        <!-- Overview -->
+        <item>#1976D2</item> <!--  Top Header bg -->
+        <item>@android:color/white</item> <!-- header text   -->
+        <item>@android:color/white</item> <!-- list bg  -->
+        <item>#1976D2</item> <!--  storage list name text  -->
+        <item>#536DFE</item> <!-- free space text  -->
+        <item>#2196F3</item> <!-- memory bar -->
+
+        <!-- secondary dialog colors -->
+        <item>#1976D2</item> <!-- folder tint -->
+        <item>@android:color/white</item> <!-- list bg -->
+        <item>#2196F3</item> <!-- list text -->
+        <item>@android:color/white</item> <!-- address bar tint -->
+        <item>#1976D2</item> <!-- new folder hint tint -->
+        <item>#1976D2</item> <!-- select button color -->
+        <item>#da6c6c</item> <!-- new folder layour bg -->
+        <item>#1978d6</item> <!-- fab multiselect color -->
+        <item>#1976D2</item> <!-- address bar bg -->
+    </array>
+
+    <!--
+
+    <string-array name="key_lenght_array">
+        <item>128 bit</item>
+        <item>256 bit</item>
+    </string-array>
+!-->
+
+</resources>
